@@ -100,7 +100,7 @@ nav.nav_left ul li:nth-child(2):after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: contain;
+
 }
 
 .text {
@@ -110,4 +110,41 @@ nav.nav_left ul li:nth-child(2):after {
 }
 .text p {
   margin: 25px 0;
+}
+
+/* sezione cubo */
+
+div.cubo_top img {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.cubo_text {
+  text-align: center;
+  width: 100%;
+  padding: 0 60px;
+}
+
+/* sezione colonne */
+
+.col_top {
+  width: 100%;
+  background-color: white;
+  margin: 20px;
+}
+
+.col_image {
+  float: left;
+  padding: 50px;
+}
+
+.col_text {
+  float: left;
+  width: 70%;
+  padding: 50px;
+}
+
+.col_text ul li {
+  display: inline;
 }
