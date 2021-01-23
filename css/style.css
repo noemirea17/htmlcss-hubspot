@@ -59,6 +59,10 @@ nav.nav_left ul li:nth-child(2):after {
   content: "\007C";
 }
 
+nav.nav_right ul li a i.fa-search {
+  color: blue;
+}
+
 /* button */
 
 .button {
@@ -83,11 +87,12 @@ nav.nav_left ul li:nth-child(2):after {
   text-decoration: none;
 }
 
+
 /* header bottom */
 
 .header_bottom {
   background-color: white;
-  height: 10vh;
+  height: 70px;
 }
 
 .logo {
@@ -131,20 +136,52 @@ div.cubo_top img {
 .col_top {
   width: 100%;
   background-color: white;
-  margin: 20px;
+  margin: 50px 0;
 }
 
-.col_image {
+.col_image.top {
   float: left;
+
+}
+
+.col_image img {
+  width: 60%;
+}
+
+.col_button {
+  margin-top: 20px;
+}
+
+.col_text.top {
+  float: left;
+  width: 500px;
   padding: 50px;
 }
 
-.col_text {
-  float: left;
-  width: 70%;
-  padding: 50px;
+div.col_text h3 {
+  margin: 20px 0;
 }
 
 .col_text ul li {
   display: inline;
+}
+
+div.col_text ul li i {
+  color: orange;
+}
+
+.col {
+  width: 30%;
+  background-color: white;
+  float: left;
+  position: relative;
+}
+
+.col_middle {
+  margin: 0 5%;
+}
+
+/* eliminare */
+.col {
+  height: 500px;
 }
