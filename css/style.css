@@ -24,6 +24,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* header  */
 
 .header_top {
@@ -42,7 +46,6 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
   padding: 10px;
   color: black;
 }
@@ -73,6 +76,7 @@ nav.nav_right ul li a i.fa-search {
   padding: 10px 5px;
   margin: 10px;
   border-radius: 10px;
+  text-align: center;
 }
 
 div.btm_contain {
@@ -95,7 +99,6 @@ div.btm_contain {
 }
 .orange.button a {
   color: white;
-  text-decoration: none;
 }
 
 span.orange.button.big {
@@ -128,15 +131,18 @@ div.container.main {
 
 }
 
-.text {
+div.banner_text.text {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0,-50%);
-  width: 50%;
+  width: 60%;
 }
+
+
 .text p {
   margin: 25px 0;
+  padding-right: 30px;
 }
 
 div.header_top.bottom {
@@ -169,7 +175,7 @@ div.cubo_top img {
 
 .col_image.top {
   float: left;
-  padding: 80px 50px;
+  padding: 80px;
 }
 
 .col_image img {
@@ -178,8 +184,8 @@ div.cubo_top img {
 
 .col_text.top {
   float: left;
-  width: 500px;
-  padding: 50px;
+  width: 700px;
+  padding: 50px 70px;
 }
 
 .col_text.top ul li {
@@ -209,7 +215,6 @@ div.col_text_btm.top hr {
   width: 30%;
   background-color: white;
   float: left;
-  position: relative;
 }
 
 .col_middle {
@@ -317,8 +322,51 @@ div.col_2_right img {
   vertical-align: middle;
 }
 
+div.col_2_left.text {
+  width: 50%;
+}
+
+div.col_2_right.bottom {
+  width: 40%;
+}
+
+div.col_2_right.bottom img {
+  width: 300px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #2d3e50;
+}
+
+.col_f {
+  width: 25%;
+  float: left;
+  padding: 0 20px;
+}
+
+div.col_f > p {
+  margin: 20px 0;
+  color: white;
+}
+
+div.col_f li {
+  margin: 10px 0;
+}
+div.col_f a {
+  color: #bdbdd4;
+}
+
+.special.button {
+  background-color: #d6d6e4;
+  border: 1px solid #2d3e50;
+}
+
+.special.button a {
+  color: #2d3e50;
+}
 
 
 
-
-/* eliminare */
+ /* eliminare */
