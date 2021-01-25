@@ -243,7 +243,7 @@ div.col_text h3 {
   margin: 20px 0;
 }
 
-/* sezione blue */
+/* sezione blu */
 .blue {
   width: 100%;
   background-image: linear-gradient(to right, #2196f3, #03a9f4 );
@@ -296,6 +296,26 @@ div.text_square {
   font-size: 13px;
 }
 
+/* second main */
+div.col_2_left {
+  float: left;
+  width: 200px;
+  margin: 50px;
+}
+
+div.col_2_right {
+  float: left;
+  width: 70%;
+  padding: 40px;
+  text-align: right;
+
+}
+
+div.col_2_right img {
+  width: 20%;
+  padding: 10px;
+  vertical-align: middle;
+}
 
 
 
