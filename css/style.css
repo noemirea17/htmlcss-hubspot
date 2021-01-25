@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 /* header  */
 
 .header_top {
@@ -34,7 +38,6 @@ nav {
 }
 
 nav ul li {
-  list-style: none;
   display: inline;
 }
 
@@ -72,6 +75,11 @@ nav.nav_right ul li a i.fa-search {
   border-radius: 10px;
 }
 
+div.btn_contain {
+  margin: 50px 0;
+  text-align: center;
+}
+
 .white.button {
   background-color: white;
 }
@@ -87,6 +95,9 @@ nav.nav_right ul li a i.fa-search {
   text-decoration: none;
 }
 
+span.orange.button.big {
+  padding: 20px;
+}
 
 /* header bottom */
 
@@ -99,22 +110,35 @@ nav.nav_right ul li a i.fa-search {
   padding: 20px;
 }
 
+div.container.main {
+  position: relative;
+  height: 100%;
+}
+
 .banner {
   height: 600px;
+  min-width: 1000px;
   background-image: url("../img/jumbotron.png");
-  background-size: cover;
+  background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
 
 }
 
 .text {
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
   width: 50%;
 }
 .text p {
   margin: 25px 0;
+}
+
+div.header_top.bottom {
+  background-color: #00d4c09e;
+  border-top: 1px solid black;
 }
 
 /* sezione cubo */
@@ -133,6 +157,7 @@ div.cubo_top img {
 
 /* sezione colonne */
 
+/* top */
 .col_top {
   width: 100%;
   background-color: white;
@@ -141,15 +166,11 @@ div.cubo_top img {
 
 .col_image.top {
   float: left;
-
+  padding: 80px 50px;
 }
 
 .col_image img {
-  width: 60%;
-}
-
-.col_button {
-  margin-top: 20px;
+  width: 150px;
 }
 
 .col_text.top {
@@ -158,18 +179,19 @@ div.cubo_top img {
   padding: 50px;
 }
 
-div.col_text h3 {
-  margin: 20px 0;
+.col_text.top ul li {
+  display: inline;
 }
 
-.col_text ul li {
-  display: inline;
+div.col_text i {
+  margin: 0 10px;
 }
 
 div.col_text ul li i {
   color: orange;
 }
 
+/* btn */
 .col {
   width: 30%;
   background-color: white;
@@ -181,7 +203,83 @@ div.col_text ul li i {
   margin: 0 5%;
 }
 
-/* eliminare */
-.col {
-  height: 500px;
+div.col_image.btn {
+  height: 150px;
 }
+
+div.col_image.btn img {
+  display: block;
+  margin: 30px auto;
+}
+
+div.col_text.btn h3,
+div.col_text.btn p {
+  text-align: center;
+  padding: 0 35px;
+}
+div.col_text.btn ul {
+  padding: 0 50px;
+}
+
+div.col_text hr {
+  width: 70%;
+  margin: 70px auto 30px;
+}
+
+div.col_text h3 {
+  margin: 20px 0;
+}
+
+/* sezione blue */
+.blue {
+  width: 100%;
+  background-image: linear-gradient(to right, #2196f3, #03a9f4 );
+  margin-top: 50px;
+}
+
+.squares {
+  margin: 30px 0;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+.row.up {
+  border-bottom: 1px solid black;
+}
+
+.square {
+  width: 20%;
+  display: inline-block;
+  padding: 20px;
+
+}
+
+div.blue > div.container > div.blue_contain_text h2,
+div.blue > div.container > div.blue_contain_text p {
+  color: white;
+  text-align: center;
+  padding: 30px 20px 0;
+}
+
+div.img_square {
+  height: 10%;
+}
+
+div.text_square {
+  text-align: center;
+  color: white;
+}
+
+div.text_square {
+  font-size: 13px;
+}
+
+
+
+
+
+
+/* eliminare */
