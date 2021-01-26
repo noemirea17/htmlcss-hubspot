@@ -36,29 +36,27 @@ a {
   border-bottom: 1px solid black;
 }
 
-nav {
-  line-height: 70px;
+.go_right, .go_left {
   float: left;
+  width: 50%;
 }
 
-nav ul li {
+.nav_left:not(.logo) {
+  line-height: 70px;
+}
+
+.go_right {
+  text-align: right;
+  line-height: 70px;
+}
+
+.inline li {
   display: inline;
 }
 
 nav ul li a {
   padding: 10px;
   color: black;
-}
-
-.nav_right {
-  text-align: right;
-  width: 50%;
-}
-
-.nav_left {
-  width: 50%;
-  display: inline;
-  float: left;
 }
 
 nav.nav_left ul li:nth-child(2):after {
@@ -79,12 +77,8 @@ nav.nav_right ul li a i.fa-search {
   text-align: center;
 }
 
-div.btm_contain {
+div.btn_contain {
   margin: 50px 0;
-}
-
-.col div.btm_contain {
-  text-align: center;
 }
 
 .white.button {
@@ -103,6 +97,10 @@ div.btm_contain {
 
 span.orange.button.big {
   padding: 20px;
+}
+
+.col_3 .btn_contain {
+  text-align: center;
 }
 
 /* header bottom */
@@ -128,7 +126,6 @@ div.container.main {
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 div.banner_text.text {
@@ -138,7 +135,6 @@ div.banner_text.text {
   transform: translate(0,-50%);
   width: 60%;
 }
-
 
 .text p {
   margin: 25px 0;
@@ -188,10 +184,6 @@ div.cubo_top img {
   padding: 50px 70px;
 }
 
-.col_text.top ul li {
-  display: inline;
-}
-
 div.col_text i {
   margin: 0 10px;
 }
@@ -235,6 +227,7 @@ div.col_text.btm p {
   text-align: center;
   padding: 0 35px;
 }
+
 div.col_text.btm ul {
   padding: 0 50px;
 }
@@ -246,6 +239,10 @@ div.col_text.btm hr {
 
 div.col_text h3 {
   margin: 20px 0;
+}
+
+.col:hover, .col_top:hover {
+  box-shadow: 4px 2px 20px 0px;
 }
 
 /* sezione blu */
@@ -264,6 +261,7 @@ div.col_text h3 {
   width: 100%;
   text-align: center;
 }
+
 .square {
   width: 20%;
   display: inline-block;
@@ -295,9 +293,6 @@ div.img_square {
 div.text_square {
   text-align: center;
   color: white;
-}
-
-div.text_square {
   font-size: 13px;
 }
 
@@ -354,7 +349,9 @@ div.col_f > p {
 div.col_f li {
   margin: 10px 0;
 }
-div.col_f a {
+
+footer a,
+footer p  {
   color: #bdbdd4;
 }
 
@@ -367,6 +364,29 @@ div.col_f a {
   color: #2d3e50;
 }
 
+div.social i {
+  margin: 10px;
+}
 
+div.languages {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d6d6e4;
+}
 
- /* eliminare */
+div.languages ul li a {
+  padding: 20px 10px;
+  line-height: 50px;
+}
+
+.footer_left {
+  margin-top: 20px;
+}
+
+.footer_right a {
+  padding: 10px;
+}
+
+footer a:hover {
+  color: #8686c0;
+}
