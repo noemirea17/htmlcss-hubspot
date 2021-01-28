@@ -29,6 +29,19 @@ a {
 }
 
 /* header  */
+.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  background-color: #F0FFF0;
+}
+
+.header_bottom {
+  margin-top: 70px;
+}
+
 
 .header_top {
   width: 100%;
@@ -251,6 +264,7 @@ div.col_text h3 {
   background-image: linear-gradient(to right, #2196f3, #03a9f4 );
   margin-top: 50px;
   padding-bottom: 20px;
+  color: white;
 }
 
 .squares {
@@ -281,7 +295,6 @@ div.col_text h3 {
 
 div.blue > div.container > div.blue_contain_text h2,
 div.blue > div.container > div.blue_contain_text p {
-  color: white;
   text-align: center;
   padding: 30px 20px 0;
 }
